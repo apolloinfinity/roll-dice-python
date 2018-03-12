@@ -4,17 +4,17 @@
 import random as r
 
 def roll_dice():
-    min = 1
-    max = 6
-    die_1 = r.randint(min, max)
-    die_2 = r.randint(min, max)
-    choice = input("Do yo want to roll the dice?")
-    while True:
-        if choice == "yes" or "y":
-            print(die_1)
-            print(die_2)
-        if choice == "no" or "n":
-            break
+    sides = 6
+    dice_1 = r.randint(1, sides)
+    dice_2 = r.randint(1, sides)
+    rolling = True
+    while rolling:
+        roll_again = input("Ready to roll?\nY for yes or N for no. ")
+        if roll_again.lower() != "n":
+            print(f'First dice rolled a {dice_1}')
+            print(f'Second dice rolled a {dice_2}')
+        else:
+            rolling = False
     
 
 if __name__ == "__main__": roll_dice()
