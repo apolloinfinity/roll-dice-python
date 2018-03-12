@@ -1,4 +1,4 @@
-#Roll Dice Simulator
+# Roll Dice Simulator
 Small Python program that simulates 2 dice. 
 Has an input that asks if you would like to play or not?
 
